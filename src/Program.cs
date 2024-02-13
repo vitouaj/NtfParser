@@ -7,15 +7,3 @@ foreach (var ch in channels)
 {
     Console.WriteLine(ch.Value.ToString());
 }
-
-
-// HashSet<string> set = new();
-
-
-// set.Add("BE");
-// set.Add("AD");
-// set.Add("BE");
-// foreach (var s in set)
-// {
-//     Console.WriteLine(s);
-// }

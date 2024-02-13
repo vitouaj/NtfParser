@@ -37,4 +37,19 @@ public class NotificationTitleTest
         Assert.AreEqual(channels.Count(), 2);
     }
 
+    [TestMethod]
+    public void GetChannelsFromTitleEmptyTagTest()
+    {
+        var text = "[Gaming][Dotnet][Car][] this is a huge error";
+        var channels = new NotifcationTitle(text).GetChannelsFromTitle();
+        Assert.AreEqual(channels.Count(), 0);
+    }
+
+    [TestMethod]
+    public void GetChannelsFromTitleNoTagTest()
+    {
+        var text = "this is a huge error";
+        var channels = new NotifcationTitle(text).GetChannelsFromTitle();
+        Assert.AreEqual(channels.Count(), 0);
+    }
 }
