@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Exception\" />
+    <Folder Include="Models/Abstracts/" />
   </ItemGroup>
 
 </Project>
