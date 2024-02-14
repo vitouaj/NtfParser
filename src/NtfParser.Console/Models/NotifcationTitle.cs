@@ -9,14 +9,10 @@ public class NotifcationTitle : INotificationTitle
     {
         Value = text;
     }
-    private HashSet<NotificationChannel> Channels {get; } = new();
+    private HashSet<NotificationChannel> Channels { get; } = new();
     public string Value { get; set; } = string.Empty;
     public HashSet<NotificationChannel> GetChannelsFromTitle()
     {
-        if (Value is null)
-        {
-            throw new ArgumentNullException("title arg can't be null");
-        }
         var pattern = @"\[(.*?)\]";
         var matches = Regex.Matches(Value, pattern);
         foreach (Match match in matches)

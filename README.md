@@ -6,8 +6,8 @@
 
 ### In NtfParser Directory, build and run project via
 
-`dotnet restore src/NtfParser.csproj`  
-`dotnet build src/NtfParser.csproj`  
-`dotnet run --project src/NtfParser.csproj`
+`dotnet restore src/NtfParser.Console/NtfParser.Console.csproj`  
+`dotnet build src/NtfParser.Console/NtfParser.Console.csproj`  
+`dotnet run --project src/NtfParser.Console/NtfParser.Console.csproj`
 
 Thank you so much for considering me. I am looking forward to hearing from you.

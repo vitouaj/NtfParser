@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\NtfParser.csproj" />
+    <ProjectReference Include="..\..\src\NtfParser.Console\NtfParser.Console.csproj" />
   </ItemGroup>
 
 </Project>
